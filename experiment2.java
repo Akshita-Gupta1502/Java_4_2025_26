@@ -1,0 +1,22 @@
+class Area {
+    void area(int side) {
+        System.out.println("Area of Square: " + (side * side));
+    }
+    void area(int length, int breadth) {
+        System.out.println("Area of Rectangle: " + (length * breadth));
+    }
+    void area(double radius) {
+        System.out.println("Area of Circle: " + (3.14 * radius * radius));
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        Area obj = new Area();
+
+        obj.area(5);          // square
+        obj.area(10, 4);      // rectangle
+        obj.area(3.5);        // circle
+    }
+}
